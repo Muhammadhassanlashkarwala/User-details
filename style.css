@@ -3,14 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* .newHeading{
-    font-size: 24px;
-margin-top: 50px;
-margin-bottom: 20px;
-} */
 
 body {
+	min-height: 100vh;
+	width: 100%;
 	background-color: #f0f0f0;
+	/* background: linear-gradient(blue , orange); */
 	font-family: Arial, sans-serif;
 }
 
@@ -18,7 +16,8 @@ body {
 	width: 300px;
 	margin: 40px auto;
 	padding: 20px;
-	background-color: #fff;
+	/* background-color: #fff; */
+	background: linear-gradient(to top right, red, blue);
 	border: 1px solid #ddd;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -28,21 +27,37 @@ body {
 	margin: 0 auto;
 	padding: 20px;
 }
-
-input[type="text"], input[type="password"] {
-	width: 80%;
+.User-info h1{
+	font-weight: 800;
+	
+}
+ #name {
+	margin-top: 20px;
+}
+#email {
+	margin-top: 20px;
+}
+#gender{
+	margin-top: 20px;
+}
+input[type="text"],input[type="email"], input[type="password"] {
+	width: 90%;
 	padding: 10px;
 	margin-bottom: 20px;
 	border: 1px solid #ccc;
+	outline: none;
 }
 
 button[type="button"] {
-	padding: 5px;
+	padding: 5px 8px;
     display: flex;
     text-align: center;
     align-items: center;
+	margin-top: 10px;
+	margin-left: 45px;
     font-size: 18px;
-	background-color: #4CAF50;
+	/* background-color: #4CAF50; */
+	background: #000;
 	color: #fff;
 	border: none;
 	border-radius: 5px;
@@ -50,10 +65,46 @@ button[type="button"] {
 }
 
 button[type="button"]:hover {
-	background-color: #3e8e41;
+	/* background-color: #3e8e41; */
+	background: linear-gradient(to top right, red, blue);
+	font-weight: 600;
+	/* margin-left: 10px; */
 }
 
 #error-msg {
 	color: red;
 	margin-top: 12px;
+}
+
+li{
+ display: flex;
+ margin-left: 120px;
+ margin-right: 120px;
+ border-bottom: 1px solid #868484;
+ padding-bottom: 1vw;
+ /* align-items: center; */
+ /* text-align: center; */
+}
+li h1{
+	/* padding-top: 1.6vw; */
+}
+li{
+	margin-top: 1vw;
+}
+li p{
+	/* padding: 0vw 2vw 0vw 0.6vw; */
+	padding-right: 2vw;
+	padding-left: 1vw;
+	padding-top: 0.7vw;
+	font-size: 1.3vw;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+li button{
+	padding-top: 0px;
+padding-left: 1vw;
+padding-right: 1vw;
+margin-right: 1vw;
+background: #4CAF50;
+font-size: 1.2vw;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
